@@ -1,0 +1,25 @@
+body {
+    margin: 10px;
+}
+/* id selector*/
+#products {}
+
+/* class selector */
+.product{}
+
+/* attribute selector  */
+a[target="_blank"] {}
+
+/* 
+
+    *= check word
+    ^= check if starts
+    $= check if ends 
+
+
+
+*/
+/* href attribute should start with https and end with .com */
+a[href^="https"][href$=".com"] { 
+    color: orange;
+}
