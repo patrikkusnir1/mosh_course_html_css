@@ -1,23 +1,74 @@
 body {
     margin: 10px;
 }
-/* descendant selector */
-#products p {
-    color: orange;
+/* real class */
+article .first {
+    font-style: italic;
+    font-size: 140%;
+}
+/* pseudoclass :first-child */
+
+/**
+
+    article :first-child {
+        font-style: italic;
+        font-size: 140%;
+    }
+
+
+/* pseudoclass :first-of-type */
+/* heading and first p receives the style */
+
+/* 
+    article :first-of-type {
+        font-style: italic;
+        font-size: 140%;
+    } 
+*/
+
+/* styles only to first p paragraph */
+article p:first-of-type {
+    font-style: italic;
+    font-size: 140%;
 }
 
-/* direct child */
-#products > p {
-    color: green;
+/* styles only to last p paragraph */
+article p:last-of-type {
+    font-weight: bold;
+}
+article p:last-child {
+    font-weight: bold;
 }
 
-/* direct sibling - second doesn't work */
-#products + p {
-    color: chocolate;
+/* last child of article */
+article :last-child {
+    font-weight: bold;
 }
 
-/* all general siblings of products section ~ */
+/* style only odd list items */
 
-#products ~ p {
-    color: crimson;
+ul li:nth-child(odd) {
+    color: deeppink;
+}
+
+/* style only even list items */
+    ul li:nth-child(even) {
+        color: green;
+    }
+
+/* formula using */
+
+ul li:nth-child(3n) {
+    color: cornflowerblue;
+}
+
+/* visited links */
+a:visited,
+a:link {
+    color: dodgerblue;
+}
+/* hover and tabkey - focus */
+a:hover,
+a:focus {
+    color: deeppink;
 }
