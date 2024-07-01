@@ -1,0 +1,23 @@
+body {
+    margin: 10px;
+}
+/* descendant selector */
+#products p {
+    color: orange;
+}
+
+/* direct child */
+#products > p {
+    color: green;
+}
+
+/* direct sibling - second doesn't work */
+#products + p {
+    color: chocolate;
+}
+
+/* all general siblings of products section ~ */
+
+#products ~ p {
+    color: crimson;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- now p is not sibling of section element and styling doesn't work -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <section id="products">
+      <!-- p is direct child -->
+      <p>Lorem ipsum dolor sit amet.</p>
+      <article>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </article>
+    </section>
+    <!-- <p> is direct sibling -->
+
+    <p>Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>
