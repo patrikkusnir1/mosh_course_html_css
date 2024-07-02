@@ -1,0 +1,31 @@
+body {
+    margin: 10px;
+}
+/* real class */
+.first-letter {
+    font-size: 140%;
+    font-weight: bold;
+}
+/* pseudoelement with ::  */
+p:nth-of-type(2)::first-letter {
+    font-size: 140%;
+    font-weight: bold;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+::selection {
+    background-color: pink;
+}
+
+p::before {
+    content: "...";
+    display: block;
+}
+
+p::after {
+    content: "...";
+    display: block;
+}
