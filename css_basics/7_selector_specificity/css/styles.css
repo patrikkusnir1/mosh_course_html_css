@@ -1,0 +1,21 @@
+h1 {color: dodgerblue; }
+
+.highlight {color: deeppink;}
+
+#products {
+    color: green;
+}
+/* the most specific selector 110 */
+/* .highlight#products {
+    color: dodgerblue;
+} */
+
+/* we can use also element + id - specificity 101 */
+/* h1#products {
+    color: dodgerblue;
+} */
+
+/* use class featured */
+.featured #products {
+    color: dodgerblue;
+}
