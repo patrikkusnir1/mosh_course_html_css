@@ -1,0 +1,25 @@
+.box:nth-of-type(1) {
+    width: 600px;
+    height: 200px;
+    background: dodgerblue;
+    border: 10px dashed royalblue;
+    /* border width, border-style, border-color */
+    border-width: 10px 20px 10px 20px;
+    /* top right bottom left, trbl 4x */
+    border-width: 10px 20px 10px;
+    /* top right bottom right */
+    border-width: 10px 20px;
+    /* top + bottom / left + right */
+    border-width: 10px;
+    /* all will be 10 */
+    border-radius: 50px;
+}
+
+.box:nth-of-type(2) {
+    width: 200px;
+    height: 200px;
+    background: dodgerblue;
+    border: 10px dashed royalblue;
+    margin: 10px;
+    border-radius: 100%;
+}
