@@ -1,0 +1,30 @@
+table,
+td {
+  border-bottom: 1px solid #c4dcf3;
+  border-collapse: collapse;
+
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+thead,
+tfoot {
+  background-color: #427fef;
+  color: white;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: #eef7ff;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: tomato;
+  margin-top: 20px;
+  box-shadow: 10px 10px lightgrey;
+}
