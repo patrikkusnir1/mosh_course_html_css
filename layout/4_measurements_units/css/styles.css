@@ -1,0 +1,51 @@
+html {
+    font-size: 62.5%;
+    /* 62.5% of 16px is 10px */
+}
+
+
+
+/* body {
+    /* margin: 10px; */
+/* what if we remove it? */
+/* width: 300px; 
+}*/
+
+.box:nth-of-type(1) {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    border-top: 3px solid orange;
+}
+
+.box:nth-of-type(2) {
+    /* 50% of the width of the parent element */
+    /* width: 50%; */
+    /* we have also vw units */
+    width: 50vw;
+    /* what if we want to have entire vertical space? we use vh unit */
+    height: 100px;
+    background-color: gold;
+    border-top: 3px solid orange;
+}
+
+.box:nth-of-type(3) {
+    /* em  units  */
+    /* 10 em = 10 * current font-size element */
+    font-size: 20px;
+    width: 10em;
+    height: 10em;
+    background-color: gold;
+    border-top: 3px solid orange;
+}
+
+.box:nth-of-type(4) {
+    /*  rem units  */
+    /* 10 rem = 10 * root font-size element */
+    width: 15rem;
+    /* 15 * 16 = 240px
+    if we change rem value to 62.5% - 15 rem will be 150px */
+    height: 10em;
+    background-color: gold;
+    border-top: 3px solid orange;
+}
