@@ -1,0 +1,19 @@
+.avatar {
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+    float: left;
+    margin-right: 0.5rem;
+}
+
+/* clearfix snippet */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.tweet {
+    border: 3px solid lightgrey;
+    overflow: hidden;
+}
